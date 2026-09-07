@@ -8,8 +8,10 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="/gallery/sarzhyn-yar (1).jpg"
-          alt="Sarzhyn Yar"
+          src="/images/hero.jpg"
+          alt={t('imageAlt')}
+          loading="eager"
+          fetchPriority="high"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0" style={{ background: 'var(--hero-overlay)' }} />
@@ -18,15 +20,16 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full">
         <div className="max-w-3xl">
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-4 animate-fade-in-up">
-            {t('title')}
+          {/* H1：单页唯一，包含景点全称与所在城市 */}
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight animate-fade-in-up">
+            <span className="block">{t('title')}</span>
+            <span className="block mt-4 text-xl sm:text-2xl md:text-3xl font-light text-white/80 animate-fade-in-up animation-delay-100">
+              {t('subtitle')}
+            </span>
           </h1>
-          <p className="text-lg sm:text-xl text-white/80 mb-8 animate-fade-in-up animation-delay-100 font-light">
-            {t('subtitle')}
-          </p>
 
           {/* Meta row */}
-          <div className="flex flex-wrap items-center gap-4 mb-8 animate-fade-in-up animation-delay-200">
+          <div className="flex flex-wrap items-center gap-4 mt-8 mb-8 animate-fade-in-up animation-delay-200">
             <div className="flex items-center gap-1.5 bg-white/15 backdrop-blur-sm rounded-full px-4 py-2">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#f0b429" stroke="none">
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>

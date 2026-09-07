@@ -2,31 +2,13 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useCallback } from 'react';
+import { SITE } from '@/lib/site';
 
-const photoFiles = [
-  'sarzhyn-yar (1).jpg',
-  'sarzhyn-yar (2).jpg',
-  'sarzhyn-yar (3).jpg',
-  'sarzhyn-yar (4).jpg',
-  'sarzhyn-yar (5).jpg',
-  'sarzhyn-yar (6).jpg',
-  'sarzhyn-yar (7).jpg',
-  'sarzhyn-yar (8).jpg',
-  'sarzhyn-yar (9).jpg',
-  'sarzhyn-yar (10).jpg',
-  'sarzhyn-yar (11).jpg',
-  'sarzhyn-yar (12).jpg',
-  'sarzhyn-yar (13).jpg',
-  'sarzhyn-yar (14).jpg',
-  'sarzhyn-yar (15).jpg',
-  'sarzhyn-yar (16).jpg',
-  'sarzhyn-yar (17).jpg',
-  'sarzhyn-yar (18).jpg',
-  'sarzhyn-yar (19).jpg',
-  'sarzhyn-yar (20).jpg',
-  'sarzhyn-yar (21).jpg',
-  'sarzhyn-yar (22).jpg',
-];
+const photoCount = 22;
+const photoFiles = Array.from(
+  { length: photoCount },
+  (_, i) => `sarzhyn-yar-park-${String(i + 1).padStart(2, '0')}.jpg`
+);
 
 export default function Gallery() {
   const t = useTranslations('gallery');
@@ -34,12 +16,30 @@ export default function Gallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
-  const photos = photoFiles.map((file, i) => ({
-    src: `/gallery/${file}`,
-    alt: captions?.[i] || `Sarzhyn Yar ${i + 1}`,
-  }));
+  const altPrefix = t('altPrefix');
+  const photos = photoFiles.map((file, i) => {
+    const caption = captions?.[i] || `Sarzhyn Yar ${i + 1}`;
+    return {
+      src: `/gallery/${file}`,
+      caption,
+      alt: `${altPrefix}${caption}`,
+    };
+  });
 
   const visiblePhotos = photos;
+
+  // 图库结构化数据：为「фото» 类搜索展示 ImageGallery / ImageObject
+  const galleryJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ImageGallery',
+    image: photos.map((photo, index) => ({
+      '@type': 'ImageObject',
+      contentUrl: `${SITE.url}${photo.src}`,
+      name: photo.caption,
+      caption: photo.caption,
+      representativeOfPage: index === 0,
+    })),
+  };
 
   const goToPrevious = useCallback(() => {
     setCurrentIndex((prev) => (prev === 0 ? photos.length - 1 : prev - 1));
@@ -85,7 +85,7 @@ export default function Gallery() {
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors rounded-lg flex items-end">
                     <p className="text-white text-sm p-3 opacity-0 group-hover:opacity-100 transition-opacity">
-                      {photo.alt}
+                      {photo.caption}
                     </p>
                   </div>
                 </div>
@@ -155,6 +155,13 @@ export default function Gallery() {
           </div>
         </div>
       )}
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(galleryJsonLd).replace(/</g, '\\u003c'),
+        }}
+      />
     </>
   );
 }

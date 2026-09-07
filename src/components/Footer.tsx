@@ -55,7 +55,17 @@ export default function Footer() {
           className="pt-6 text-center text-sm space-y-4"
           style={{ borderTop: '1px solid var(--border-color)', color: 'var(--text-muted)' }}
         >
+          <p>
+            <a
+              href={`${prefix}/parks`}
+              className="inline-block text-base font-medium hover:underline"
+              style={{ color: 'var(--accent)' }}
+            >
+              {t('guideLabel')}
+            </a>
+          </p>
           <p>{t('rights')}</p>
+          <p className="text-xs max-w-3xl mx-auto leading-relaxed">{t('imageRights')}</p>
           <p className="text-xs max-w-3xl mx-auto leading-relaxed">{t('disclaimer')}</p>
         </div>
       </div>

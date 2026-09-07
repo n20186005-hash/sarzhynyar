@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Sarzhyn Yar | Kharkiv, Ukraine",
-    "description": "Explore the complete guide to Sarzhyn Yar in Kharkiv, Ukraine. Discover this beautiful park and its surrounding attractions."
+    "title": "Sarzhyn Yar Park, Kharkiv — metro route, hours, photos & pool",
+    "description": "Sarzhyn Yar Park in Kharkiv: a mineral spring, open-air pool, playgrounds and rest by the water. How to get there from Botanichnyi Sad metro, opening hours, map, history and photos."
   },
   "header": {
     "home": "Home",
@@ -13,13 +13,15 @@
   "hero": {
     "title": "Sarzhyn Yar",
     "subtitle": "Kharkiv · Ukraine",
+    "imageAlt": "Sarzhyn Yar - main view of the park in Kharkiv, Ukraine",
     "rating": "4.8",
-    "reviewCount": "32,982",
+    "reviewCount": "32,968",
     "hours": "Open 24 Hours",
     "openMaps": "View Location"
   },
   "intro": {
-    "title": "Explore Sarzhyn Yar",
+    "title": "About Sarzhyn Yar",
+    "seoLead": "Welcome to **Sarzhyn Yar (Саржин Яр)**, the leafy public park that serves as the green heart of **Kharkiv**, **Kharkiv Oblast**, **Ukraine**. This destination is a primary hub for locals and travelers visiting the region.",
     "description": "Sarzhyn Yar is located in Kharkiv, Kharkiv Oblast, Ukraine. It is a beautiful urban park that serves as an ideal place for locals and tourists to relax and unwind. With its rich greenery and pleasant environment, the park is one of the important green spaces in Kharkiv, providing not only leisure space for citizens but also an excellent vantage point to experience the natural charm of Kharkiv.",
     "visitGuide": {
       "title": "Visiting Tips",
@@ -72,9 +74,11 @@
     "cityValue": "Kharkiv",
     "googleRating": "Google Rating",
     "address": "Address",
-    "addressValue": "Kharkiv, Kharkiv Oblast, Ukraine, 61000",
+    "addressValue": "Sarzhyn Yar, Shevchenkivskyi District (Pavlovo Pole area), Kharkiv, Ukraine",
     "plusCode": "Plus Code",
-    "plusCodeValue": "26GJ+JF Kharkiv, Kharkiv Oblast, Ukraine"
+    "plusCodeValue": "26GJ+JF Kharkiv, Kharkiv Oblast, Ukraine",
+    "district": "District",
+    "districtValue": "Shevchenkivskyi District · Pavlovo Pole"
   },
   "hours": {
     "title": "Opening Hours",
@@ -104,7 +108,7 @@
     "cardPrice": "Recommended to get a local transport card for convenient public transport"
   },
   "transport": {
-    "title": "Transportation",
+    "title": "How to get to Sarzhyn Yar Park",
     "airport": "From the Airport",
     "airportDesc": "Nearest airport: Kharkiv International Airport (HRK). From the airport, you can take a taxi or public transport to the city center.",
     "selfDrive": "Driving",
@@ -116,10 +120,12 @@
     "cycling": "Cycling",
     "cyclingDesc": "Kharkiv has areas suitable for cycling, which is also a good choice for exploring the city.",
     "tips": "Travel Tips",
-    "tipsDesc": "Kharkiv is the second-largest city in Ukraine, with rich historical culture, magnificent squares, and beautiful natural landscapes."
+    "tipsDesc": "Kharkiv is the second-largest city in Ukraine, with rich historical culture, magnificent squares, and beautiful natural landscapes.",
+    "metroTitle": "Botanichnyi Sad metro — 5 minutes’ walk",
+    "metroDesc": "The easiest option for most visitors: leave the metro at Botanichnyi Sad station and head towards the park — the walk to the main entrance takes about 5 minutes."
   },
   "route": {
-    "title": "Visiting Route",
+    "title": "Landmarks & Attractions Around Sarzhyn Yar",
     "overview": "Kharkiv City and Sarzhyn Yar Walking Route",
     "steps": [
       "Arrive at Sarzhyn Yar, taste the famous natural mineral water and enjoy the tranquility",
@@ -164,7 +170,7 @@
     "tipsContent": "Spring and autumn are the most beautiful seasons for Sarzhyn Yar, with lush greenery, making them the best timing for photography."
   },
   "gallery": {
-    "title": "Stunning Photos",
+    "title": "Sarzhyn Yar Park Photos",
     "subtitle": "Charming Scenery of Sarzhyn Yar",
     "captions": [
       "Park Panorama",
@@ -191,7 +197,8 @@
       "Spring Atmosphere"
     ],
     "viewAll": "View more photos on Google Maps",
-    "showAllPhotos": "Show All Photos"
+    "showAllPhotos": "Show All Photos",
+    "altPrefix": "Photo of Sarzhyn Yar Park: "
   },
   "reviews": {
     "title": "Visitor Reviews",
@@ -249,12 +256,17 @@
     ]
   },
   "mapSection": {
-    "title": "Transportation Guide",
-    "subtitle": "Kharkiv, Kharkiv Oblast, Ukraine, 61000",
+    "title": "Location & How to Visit Sarzhyn Yar in Kharkiv",
+    "subtitle": "Sarzhyn Yar, Shevchenkivskyi District, Kharkiv, Ukraine",
+    "locationChain": "Sarzhyn Yar → Kharkiv → Kharkiv Oblast → Ukraine",
+    "nearbyLead": "When visiting **Sarzhyn Yar**, visitors can easily explore surrounding historical landmarks and points of interest, including the **Kharkiv Botanical Garden** and the **Kharkiv Cable Car**.",
+    "officialIntro": "For official updates and regional tourism information, visit",
+    "officialName": "Ukraine State Tourism Development Agency",
     "openMaps": "View on Google Maps"
   },
   "footer": {
     "rights": "© 2026 Sarzhyn Yar. All rights reserved.",
+    "imageRights": "Image Rights: All photos displayed on this website remain the property and copyright of their respective photographers.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "cookies": "Cookie Settings",
@@ -277,7 +289,8 @@
         "url": "https://kharkivoda.gov.ua/"
       }
     },
-    "disclaimer": "This website is an independent third-party travel information project. We have no affiliation with local government or other official institutions."
+    "disclaimer": "This website is an independent third-party travel information project. We have no affiliation with local government or other official institutions.",
+    "guideLabel": "Parks & green spaces of Kharkiv"
   },
   "privacy": {
     "title": "Privacy Policy",
@@ -373,8 +386,369 @@
     "consentManagement": "Consent Management: You can change your cookie settings at any time. Please note that disabling certain cookies may affect the website's functionality.",
     "rejectAll": "Reject All"
   },
+  "history": {
+    "title": "History & Significance of Sarzhyn Yar",
+    "lead": "More than a park, Sarzhyn Yar is a piece of Kharkiv's natural heritage shaped by centuries of spring water flowing toward the city.",
+    "paragraphs": [
+      "Sarzhyn Yar is a historic ravine (yar) more than 12 kilometers long on the northern edge of Kharkiv. Its slopes have carried crystal-clear spring water toward the city for centuries, and the green valley has long been one of Kharkiv's most treasured natural landscapes.",
+      "The ravine's most famous feature is the Sarzhyn Yar mineral spring, which still flows today. Around it, a modern spring pavilion and elevated wooden boardwalks have turned the valley into a year-round urban retreat where visitors can drink fresh mineral water, rest in the shade of old trees and enjoy the sound of the stream.",
+      "Today Sarzhyn Yar is maintained as a public recreation zone with walking paths, playgrounds, a stream and a small swimming pool. It is a natural monument of local significance and one of the most recognizable green landmarks in Kharkiv."
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know before visiting Sarzhyn Yar.",
+    "items": [
+      {
+        "q": "Where is Sarzhyn Yar located?",
+        "a": "Sarzhyn Yar is located in Kharkiv, Kharkiv Oblast, Ukraine (postal code 61000), a short walk from Botanichnyi Sad metro station."
+      },
+      {
+        "q": "Is Sarzhyn Yar free to visit?",
+        "a": "Yes. Sarzhyn Yar is a public park and is free to visit year-round. No admission ticket or reservation is required."
+      },
+      {
+        "q": "What are the opening hours of Sarzhyn Yar?",
+        "a": "Sarzhyn Yar is an open-air park and can be visited 24 hours a day. Early mornings and late afternoons are the most peaceful times for a walk."
+      },
+      {
+        "q": "What can visitors do at Sarzhyn Yar?",
+        "a": "Visitors can stroll along the wooden boardwalks, taste natural mineral water at the spring pavilion, use the playground areas, picnic on the lawns or relax beside the stream."
+      },
+      {
+        "q": "How do I get to Sarzhyn Yar?",
+        "a": "Take the Kharkiv metro to Botanichnyi Sad station and walk a few minutes to the park. Buses and taxis also stop near the entrances, and the Kharkiv cable car runs across the ravine."
+      },
+      {
+        "q": "Is Sarzhyn Yar suitable for families with children?",
+        "a": "Yes. Sarzhyn Yar has playground areas, gentle walking paths and a small swimming pool, making it a family-friendly destination in Kharkiv."
+      },
+      {
+        "q": "How do I get to Sarzhyn Yar by metro?",
+        "a": "Take the metro to Botanichnyi Sad station; the park is about a 5-minute walk away. Head towards the green area and the ravine’s wooden boardwalks."
+      },
+      {
+        "q": "Which district of Kharkiv is Sarzhyn Yar in?",
+        "a": "Sarzhyn Yar is located in Kharkiv’s Shevchenkivskyi District, in the Pavlovo Pole area to the north-west of the city centre."
+      }
+    ]
+  },
+  "sources": {
+    "title": "Sources & References",
+    "subtitle": "This guide is compiled from official and authoritative sources. For official updates and regional tourism information, visit the portals below.",
+    "mapsLabel": "Sarzhyn Yar on Google Maps"
+  },
+  "weather": {
+    "title": "Weather at Sarzhyn Yar",
+    "subtitle": "Current weather and a 7-day forecast for Kharkiv to help you plan your walk.",
+    "now": "Now",
+    "feelsLike": "Feels like",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "windUnit": "km/h",
+    "precipitation": "Precipitation",
+    "today": "Today",
+    "forecastTitle": "7-day forecast",
+    "unavailable": "The weather forecast is temporarily unavailable. Please try refreshing the page later.",
+    "codes": {
+      "clear": "Clear",
+      "partlyCloudy": "Partly cloudy",
+      "cloudy": "Cloudy",
+      "fog": "Fog",
+      "drizzle": "Light rain",
+      "rain": "Rain",
+      "snow": "Snow",
+      "storm": "Thunderstorm"
+    }
+  },
+  "seasons": {
+    "title": "Visiting by season: a year-round strategy",
+    "subtitle": "How the weather, water, plants and visitor numbers at Sarzhyn Yar change through the year — pick the best time for your trip.",
+    "dataNote": "This overview summarises long-term average climate figures for Kharkiv (30-year climate normals) together with the park's seasonal patterns.",
+    "labels": {
+      "climate": "Weather & climate",
+      "water": "Water & springs",
+      "nature": "Nature & wildlife",
+      "visit": "How to plan a visit"
+    },
+    "items": [
+      {
+        "season": "Winter",
+        "months": "December – February",
+        "climate": "Cold, averaging −7 to −1 °C, with frequent snowfall and short daylight hours.",
+        "water": "Spring water flows all year round and stays cool; the pavilion works, the pool is closed.",
+        "nature": "Trees are bare and birds winter in the city. The park is quiet and snow-covered.",
+        "visit": "Bring warm clothes and non-slip shoes; paths may be slippery. Mornings are the calmest."
+      },
+      {
+        "season": "Spring",
+        "months": "March – May",
+        "climate": "Gradual warming from about 0 °C in March to +15–20 °C in May, with rain and snowmelt.",
+        "water": "After the snowmelt the stream and springs run fullest; right after high water the water is more turbid.",
+        "nature": "The first flowers open and grass turns green; birds fill the park — a good time for watching.",
+        "visit": "April–May is a comfortable window: not hot and less crowded. Bring a light waterproof jacket."
+      },
+      {
+        "season": "Summer",
+        "months": "June – August",
+        "climate": "Warm, averaging +20–25 °C, with possible thunderstorms; July has the most sunny days.",
+        "water": "Water is pleasant to drink at the pavilion; the small pool opens in warm weather (swim at your own risk).",
+        "nature": "Lush greenery, chicks and butterflies; tree shade offers relief from the heat. The most active season for flora.",
+        "visit": "Come early morning or late afternoon to avoid the heat and crowds; carry your own water."
+      },
+      {
+        "season": "Autumn",
+        "months": "September – November",
+        "climate": "Mild cooling from about +18 °C in September to +5 °C in November, with changeable cloud cover.",
+        "water": "Springs remain stable; the water is especially clear in autumn.",
+        "nature": "Golden leaves and crimson maples make the park ideal for photography and quiet walks.",
+        "visit": "September is one of the best months: comfortable temperatures and beautiful scenery."
+      }
+    ]
+  },
+  "trips": {
+    "title": "Routes for different visitors",
+    "subtitle": "Three typical scenarios matched to your group and pace, plus universal half-day and full-day routes.",
+    "personasLabel": "Choose your scenario",
+    "labels": {
+      "who": "For whom",
+      "pace": "Pace",
+      "bestTime": "Best time"
+    },
+    "personas": [
+      {
+        "title": "Families with children",
+        "who": "For families with pre-school and school-age children",
+        "pace": "Relaxed pace, 1.5–2 hours",
+        "bestTime": "Weekday mornings or Sunday before noon",
+        "summary": "The park is spacious and safe: a playground, soft lawns, a stream and a pool. Children can run around while adults rest in the shade.",
+        "points": [
+          "Children play on the playground while you take a break on a bench.",
+          "A walk along the wooden boardwalks by the stream is safe for little ones.",
+          "A picnic on the lawn — bring a blanket and water."
+        ],
+        "note": "Keep an eye on children near the water and the pool. Weekends can be busy, so choose morning hours."
+      },
+      {
+        "title": "Photographers & nature lovers",
+        "who": "For those who want to capture the greenery, water and pavilion architecture",
+        "pace": "Slow, with frequent stops",
+        "bestTime": "Morning for soft light; golden hour before sunset",
+        "summary": "Best angles: the elevated boardwalks, the stream, the spring pavilion and the long shadows of old trees. The most expressive light comes in spring and autumn.",
+        "points": [
+          "Dawn photography of wooden boardwalks in the mist.",
+          "Frames by the pavilion with reflections in the water.",
+          "Macro work on flowers, leaves and water drops (spring–summer)."
+        ],
+        "note": "Use a tripod where you won't disturb others; stay on the paths and protect the plants."
+      },
+      {
+        "title": "Easy route / accessibility",
+        "who": "For visitors with limited mobility, with a pushchair or of older age",
+        "pace": "Leisurely, 1–1.5 hours",
+        "bestTime": "Weekday mornings when the park is empty",
+        "summary": "The main alley and wooden boardwalks are fairly level. The most accessible route runs from the entrance to the pavilion and back along the main path.",
+        "points": [
+          "Entrance near Botanichnyi Sad metro station → the main path to the pavilion.",
+          "A rest by the pavilion and a taste of the water.",
+          "A slow return along the same path."
+        ],
+        "note": "Some trails have slopes and changes in level. Check the current surface condition before you go."
+      }
+    ],
+    "durationTitle": "Universal routes by time",
+    "halfDay": {
+      "title": "Half day (2–3 hours)",
+      "lead": "Perfect for a first visit: water, boardwalks, the playground and the cable car.",
+      "stops": [
+        {
+          "name": "Start near Botanichnyi Sad metro",
+          "note": "A 5–10 minute walk to the park entrance."
+        },
+        {
+          "name": "Mineral water pavilion",
+          "note": "Try the spring water — the ravine's main symbol."
+        },
+        {
+          "name": "Wooden boardwalks along the stream",
+          "note": "The park's main strolling line."
+        },
+        {
+          "name": "Playground and lawns",
+          "note": "A stop for rest or a picnic."
+        },
+        {
+          "name": "Upper station of the cable car",
+          "note": "A short ride with panoramic views of the green ravine."
+        }
+      ]
+    },
+    "fullDay": {
+      "title": "Full day (5–6 hours)",
+      "lead": "A closer look at the park and Kharkiv's neighbouring green spots.",
+      "stops": [
+        {
+          "name": "Morning at Sarzhyn Yar",
+          "note": "Fresh air, pavilion water and a stroll along the main alley."
+        },
+        {
+          "name": "Kharkiv Botanical Garden",
+          "note": "Beside the ravine — plant collections from many climate zones."
+        },
+        {
+          "name": "Lunch in the green area",
+          "note": "Bring your own snacks or choose a nearby city café."
+        },
+        {
+          "name": "Cable car across the ravine",
+          "note": "A bird's-eye view of the valley and the city."
+        },
+        {
+          "name": "Relax by the water",
+          "note": "Depending on the season — the pool, the stream or a photo stop."
+        }
+      ]
+    }
+  },
+  "facilities": {
+    "title": "Facilities & visitor services",
+    "subtitle": "What is available inside the park, and what to look for in the surrounding city.",
+    "neutralNote": "We are a non-profit educational project and do not recommend specific venues: the list below covers only types of services so you can choose what fits your preferences.",
+    "onSiteTitle": "Inside the park",
+    "onSiteItems": [
+      {
+        "name": "Mineral spring & pavilion",
+        "note": "Free drinking mineral water all year round."
+      },
+      {
+        "name": "Footpaths & wooden boardwalks",
+        "note": "Level routes along the stream; some sections slope."
+      },
+      {
+        "name": "Playground",
+        "note": "Free swings and slides for children."
+      },
+      {
+        "name": "Stream & small pool",
+        "note": "Relax by the water; in warm weather swimming is at your own risk."
+      },
+      {
+        "name": "Benches, lawns, shade",
+        "note": "Plenty of spots for picnics and rest."
+      },
+      {
+        "name": "Restrooms",
+        "note": "Public toilets on site are limited; the nearest fixed facilities are in the city infrastructure near the entrances."
+      }
+    ],
+    "nearbyTitle": "Nearby (city infrastructure)",
+    "nearbyItems": [
+      {
+        "name": "Parking",
+        "note": "Adjacent streets and car parks; these can fill up on weekends."
+      },
+      {
+        "name": "Public transport",
+        "note": "Metro, bus/trolleybus, the cable car and taxis."
+      },
+      {
+        "name": "Cafés & dining",
+        "note": "Coffee shops, eateries and restaurants in the nearby city."
+      },
+      {
+        "name": "Groceries & supermarkets",
+        "note": "Convenience stores and supermarkets within walking distance."
+      },
+      {
+        "name": "Pharmacies & medical care",
+        "note": "Pharmacies and medical facilities within the city."
+      },
+      {
+        "name": "Hotels & accommodation",
+        "note": "Hotels, hostels and other types of lodging in Kharkiv."
+      },
+      {
+        "name": "ATMs & currency exchange",
+        "note": "Banking services are available in central districts."
+      },
+      {
+        "name": "Fuel & EV charging",
+        "note": "Petrol stations and EV charging points on the city's main streets."
+      }
+    ]
+  },
+  "responsibility": {
+    "title": "Science & visitor responsibility",
+    "subtitle": "Short scientific facts about the ravine and simple rules that help preserve it for future generations.",
+    "learnTitle": "What to know about Sarzhyn Yar",
+    "learn": [
+      {
+        "title": "A ravine shaped by water",
+        "text": "The valley is a natural ravine formed by underground and surface water over millennia. The stream in the park is a living part of that process, not a decorative feature."
+      },
+      {
+        "title": "Mineral water from deep below",
+        "text": "The pavilion water is natural mineral water rising from deep aquifers. It reaches the surface at a stable temperature all year round."
+      },
+      {
+        "title": "A protected natural site",
+        "text": "Sarzhyn Yar holds the status of a natural monument of local significance, preserving valuable soils, plants and water ecosystems within the city."
+      }
+    ],
+    "dutiesTitle": "Rules for responsible visits",
+    "duties": [
+      "Leave the area clean: use the bins or take your rubbish with you.",
+      "Do not light open fires outside designated areas.",
+      "Do not disturb or feed birds and animals.",
+      "Do not pick plants or damage trees; stay on the paths.",
+      "Supervise children near the water, stream and pool.",
+      "Drink only from the purpose-built pavilion, not from open water bodies.",
+      "Respect other visitors: avoid loud music and keep personal space."
+    ],
+    "note": "Tip: for the best experience visit on weekday mornings or evenings, when the park is quieter and the light is softer."
+  },
   "officialManagement": {
-    "title": "About Sarzhyn Yar",
+    "title": "City Management & Official Status",
     "text": "Sarzhyn Yar is an important natural park in Kharkiv, managed and maintained by the relevant departments of the Kharkiv City Government."
+  },
+  "kharkivParks": {
+    "meta": {
+      "title": "Parks in Kharkiv — where to walk: a green city guide",
+      "description": "A guide to Kharkiv’s green spaces: Sarzhyn Yar, the botanical garden, the forest park and more. Ideas for where to walk in Kharkiv and how to reach Sarzhyn Yar."
+    },
+    "title": "Parks & green spaces of Kharkiv",
+    "subtitle": "A short guide to the city’s most interesting public green areas",
+    "lead": "Kharkiv is one of the greenest big cities in Ukraine. We have gathered several notable parks and natural areas to help you pick a place for a walk. Sarzhyn Yar is on this list — and it is the subject of this site’s main guide.",
+    "items": [
+      {
+        "name": "Sarzhyn Yar",
+        "tag": "Natural monument",
+        "text": "A deep ravine with a mineral spring, wooden boardwalks and an open-air pool — one of Kharkiv’s best-known green places and the main topic of this site."
+      },
+      {
+        "name": "Kharkiv Botanical Garden",
+        "tag": "Scientific garden",
+        "text": "One of Ukraine’s oldest botanical gardens (founded in 1804), located next to Sarzhyn Yar, with plant collections from many climate zones."
+      },
+      {
+        "name": "Forest Park (Lisopark)",
+        "tag": "Forest zone",
+        "text": "The city’s largest forest-park area in its north — dozens of kilometres of trails for walking, running and cycling."
+      },
+      {
+        "name": "Gorky Central Park of Culture and Leisure",
+        "tag": "Culture park",
+        "text": "A widely known Kharkiv park with broad avenues, amusement rides and rest areas for families."
+      },
+      {
+        "name": "Shevchenko City Garden",
+        "tag": "Historic park",
+        "text": "An old park in the very centre of the city beside Karazin University — one of Kharkiv’s oldest green places."
+      }
+    ],
+    "ctaTitle": "Start at Sarzhyn Yar",
+    "ctaText": "Sarzhyn Yar is easy to reach, open free of charge all year and has wooden boardwalks — a good starting point for exploring Kharkiv’s parks.",
+    "ctaLabel": "Read the full Sarzhyn Yar guide",
+    "note": "Before you travel, check the current status and accessibility of individual locations on official city resources — park arrangements can change."
   }
 }

@@ -68,7 +68,7 @@ export default function TransportSection() {
   ];
 
   return (
-    <section className="section-padding">
+    <section id="transport" className="section-padding">
       <div className="max-w-5xl mx-auto">
         <h2
           className="font-display text-3xl sm:text-4xl font-semibold mb-6"
@@ -77,6 +77,25 @@ export default function TransportSection() {
           {t('title')}
         </h2>
         <div className="w-12 h-0.5 mb-10" style={{ background: 'var(--accent)' }} />
+
+        {/* 地铁重点提示：直接命中「Саржин яр метро」等查询意图 */}
+        <div
+          className="rounded-xl mb-10 p-6 sm:p-8 flex flex-col sm:flex-row sm:items-start gap-4"
+          style={{ background: 'var(--accent)' }}
+        >
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
+            <path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" />
+            <path d="M2 11h20" />
+            <circle cx="7" cy="15" r="1.2" fill="#ffffff" />
+            <circle cx="17" cy="15" r="1.2" fill="#ffffff" />
+          </svg>
+          <div>
+            <h3 className="font-display text-xl sm:text-2xl font-bold mb-2 text-white">
+              {t('metroTitle')}
+            </h3>
+            <p className="text-base leading-relaxed text-white/95">{t('metroDesc')}</p>
+          </div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {transportOptions.map((option) => (

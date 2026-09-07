@@ -1,7 +1,13 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations, useMessages } from 'next-intl';
+import { richText } from '@/lib/richText';
+import { SITE } from '@/lib/site';
 
 export default function MapEmbed() {
   const t = useTranslations('mapSection');
+  const messages = useMessages() as any;
+  const nearbyLead: string = messages?.mapSection?.nearbyLead || '';
+  const officialIntro: string = messages?.mapSection?.officialIntro || '';
+  const officialName: string = messages?.mapSection?.officialName || '';
 
   return (
     <section id="map" className="section-padding" style={{ background: 'var(--bg-secondary)' }}>
@@ -15,23 +21,19 @@ export default function MapEmbed() {
         <p className="mb-8 text-sm" style={{ color: 'var(--text-muted)' }}>{t('subtitle')}</p>
         <div className="w-12 h-0.5 mb-10" style={{ background: 'var(--accent)' }} />
 
-        {/* Map */}
+        {/* Google 地图嵌入 */}
         <div
           className="map-container relative rounded-xl overflow-hidden"
           style={{ border: '1px solid var(--map-border)' }}
         >
-          {/* 
-            NOTE: Google Maps attribution is hidden via CSS (.gm-style-cc, .gmnoprint).
-            This is for visual cleanliness only. Google's Terms of Service apply.
-          */}
           <iframe
-            src="https://maps.google.com/maps?q=Sarzhyn+Yar,+Kharkiv,+Ukraine&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            src={SITE.mapEmbedSrc}
             width="100%"
             height="450"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+            referrerPolicy="strict-origin-when-cross-origin"
             title="Google Maps - Sarzhyn Yar"
           />
         </div>
@@ -39,7 +41,7 @@ export default function MapEmbed() {
         {/* Open in Google Maps */}
         <div className="mt-6 flex justify-center">
           <a
-            href="https://maps.app.goo.gl/uvLNbbjwgavkq2VP6"
+            href={SITE.mapsShareUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-white transition-colors"
@@ -56,6 +58,29 @@ export default function MapEmbed() {
               <line x1="10" y1="14" x2="21" y2="3" />
             </svg>
           </a>
+        </div>
+
+        {/* 周边语义集群 + 权威出站链接 */}
+        <div className="max-w-3xl mx-auto mt-10 space-y-4 text-center">
+          {nearbyLead && (
+            <p className="text-base leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+              {richText(nearbyLead, 'nearbyLead')}
+            </p>
+          )}
+          {(officialIntro || officialName) && (
+            <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
+              {officialIntro}{' '}
+              <a
+                href={SITE.govtTourismUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium underline"
+                style={{ color: 'var(--accent)' }}
+              >
+                {officialName}
+              </a>
+            </p>
+          )}
         </div>
       </div>
     </section>

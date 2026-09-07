@@ -1,4 +1,5 @@
 import { useTranslations, useMessages } from 'next-intl';
+import { richText } from '@/lib/richText';
 
 export default function Intro() {
   const t = useTranslations('intro');
@@ -6,6 +7,7 @@ export default function Intro() {
   const messages = useMessages() as any;
   const items: string[] = messages?.intro?.visitGuide?.items || [];
   const alsoKnownAsItems: string[] = messages?.intro?.alsoKnownAs?.items || [];
+  const seoLead: string = messages?.intro?.seoLead || '';
 
   return (
     <section className="section-padding">
@@ -17,6 +19,16 @@ export default function Intro() {
           {t('title')}
         </h2>
         <div className="w-12 h-0.5 mb-8" style={{ background: 'var(--accent)' }} />
+
+        {/* 首段等位声明：将俗称/域名含义与官方全称在语义层面等同 */}
+        {seoLead && (
+          <div
+            className="border-l-4 pl-6 mb-10 text-lg leading-relaxed"
+            style={{ borderColor: 'var(--accent)', color: 'var(--text-primary)' }}
+          >
+            {richText(seoLead, 'seoLead')}
+          </div>
+        )}
 
         <p
           className="text-lg leading-relaxed mb-12"

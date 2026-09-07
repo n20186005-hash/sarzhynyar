@@ -8,22 +8,25 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const baseUrl = 'https://greatyarmouthbeach.com';
-  const itUrl = `${baseUrl}/terms-of-service`;
-  const enUrl = `${baseUrl}/en/terms-of-service`;
-  const frUrl = `${baseUrl}/fr/terms-of-service`;
-  const zhUrl = `${baseUrl}/zh-Hant/terms-of-service`;
-  const selfUrl = locale === 'it' ? itUrl : locale === 'en' ? enUrl : locale === 'fr' ? frUrl : zhUrl;
+  const baseUrl = 'https://sarzhynyar.com';
+  const zhUrl = `${baseUrl}/zh/terms-of-service/`;
+  const enUrl = `${baseUrl}/en/terms-of-service/`;
+  const ruUrl = `${baseUrl}/ru/terms-of-service/`;
+  const ukUrl = `${baseUrl}/uk/terms-of-service/`;
+  let selfUrl = zhUrl;
+  if (locale === 'en') selfUrl = enUrl;
+  else if (locale === 'ru') selfUrl = ruUrl;
+  else if (locale === 'uk') selfUrl = ukUrl;
 
   return {
     alternates: {
       canonical: selfUrl,
       languages: {
-        'it': itUrl,
+        'zh': zhUrl,
         'en': enUrl,
-        'fr': frUrl,
-        'zh-Hant': zhUrl,
-        'x-default': itUrl,
+        'ru': ruUrl,
+        'uk': ukUrl,
+        'x-default': ukUrl,
       },
     },
   };
@@ -34,7 +37,7 @@ function TermsContent() {
   const ht = useTranslations('header');
   const locale = useLocale();
   const messages = useMessages() as any;
-  const homeHref = locale === 'it' ? '/' : `/${locale}`;
+  const homeHref = `/${locale}`;
   const sections = (messages?.terms?.sections || []) as Array<{ heading: string; content: string }>;
 
   return (

@@ -3,6 +3,7 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import type { Metadata } from 'next';
+import { SITE, buildAttractionJsonLd } from '@/lib/site';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -15,17 +16,17 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const messages = (await import(`@/messages/${locale}.json`)).default;
-  const baseUrl = 'https://sarzhynyar.com';
+  const baseUrl = SITE.url;
 
-  const zhUrl = `${baseUrl}/zh`;
-  const enUrl = `${baseUrl}/en`;
-  const ruUrl = `${baseUrl}/ru`;
-  const ukUrl = `${baseUrl}/uk`;
+  const zhUrl = `${baseUrl}/zh/`;
+  const enUrl = `${baseUrl}/en/`;
+  const ruUrl = `${baseUrl}/ru/`;
+  const ukUrl = `${baseUrl}/uk/`;
 
-  let selfUrl = zhUrl;
-  if (locale === 'en') selfUrl = enUrl;
+  let selfUrl = ukUrl;
+  if (locale === 'zh') selfUrl = zhUrl;
+  else if (locale === 'en') selfUrl = enUrl;
   else if (locale === 'ru') selfUrl = ruUrl;
-  else if (locale === 'uk') selfUrl = ukUrl;
 
   const localeMap: Record<string, string> = {
     'zh': 'zh_CN',
@@ -44,16 +45,34 @@ export async function generateMetadata({
         'en': enUrl,
         'ru': ruUrl,
         'uk': ukUrl,
-        'x-default': zhUrl,
+        'x-default': ukUrl,
       } as Record<string, string>,
     },
     openGraph: {
       title: messages.meta.title,
       description: messages.meta.description,
       url: selfUrl,
-      siteName: "Sarzhyn Yar",
+      siteName: SITE.fullName,
       locale: localeMap[locale] || 'zh_CN',
       type: 'website',
+      images: [
+        {
+          url: SITE.heroImageUrl,
+          width: 1200,
+          height: 630,
+          alt: `${SITE.fullName} - ${SITE.city}, ${SITE.country}`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: messages.meta.title,
+      description: messages.meta.description,
+      images: [SITE.heroImageUrl],
+    },
+    robots: {
+      index: true,
+      follow: true,
     },
   };
 }
@@ -81,11 +100,43 @@ export default async function LocaleLayout({
     'uk': 'uk',
   };
 
+  // TouristAttraction 结构化数据（JSON-LD，置于 <head>）
+  const attractionJsonLd = buildAttractionJsonLd(messages.meta.description);
+
   return (
-    <html lang={langMap[locale] || 'zh-CN'} suppressHydrationWarning>
+    <html lang={langMap[locale] || 'uk'} suppressHydrationWarning>
       <head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossOrigin="anonymous" />
         <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXX" />
+        {/* GA4 统计 */}
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${SITE.ga4Id}`} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${SITE.ga4Id}', { anonymize_ip: true });
+            `,
+          }}
+        />
+        {/* PWA 支持 */}
+        <link rel="manifest" href="/manifest.webmanifest" />
+        <meta name="theme-color" content="#3a7a8d" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Sarzhyn Yar" />
+        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/icons/icon-512.png" />
+        {/* 单景点 SEO：TouristAttraction JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(attractionJsonLd).replace(/</g, '\\u003c'),
+          }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -105,6 +156,18 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
+        {/* Service Worker 注册（PWA） */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function () {
+                  navigator.serviceWorker.register('/sw.js').catch(function () {});
+                });
+              }
+            `,
+          }}
+        />
       </body>
     </html>
   );
