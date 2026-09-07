@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sarzhynyar",
+  "compatibility_date": "2026-09-03",
+  // 纯静态站点：把 Next.js 静态导出产物 out/ 作为 Workers Static Assets 托管，
+  // 不设置 main，wrangler deploy 会跳过 Next.js/OpenNext 迁移，直接上传静态资源。
+  "assets": {
+    "directory": "./out",
+    // 未匹配路径返回 Next.js 静态导出的 404 页面
+    "not_found_handling": "404-page"
+  }
+}
