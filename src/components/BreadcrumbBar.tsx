@@ -11,8 +11,26 @@ export default function BreadcrumbBar() {
     .map((part) => part.trim())
     .filter(Boolean);
 
+  // 地理层级面包屑结构化数据：全称 → 城市 → 州/省 → 国家
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: parts.map((name, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name,
+    })),
+  };
+
   return (
-    <div className="border-b" style={{ background: 'var(--bg-tertiary)', borderColor: 'var(--border-color)' }}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, '\\u003c'),
+        }}
+      />
+      <div className="border-b" style={{ background: 'var(--bg-tertiary)', borderColor: 'var(--border-color)' }}>
       <nav aria-label="Breadcrumb" className="max-w-5xl mx-auto px-6 py-3">
         <ol className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-sm">
           {parts.map((part, index) => (
@@ -34,6 +52,7 @@ export default function BreadcrumbBar() {
           ))}
         </ol>
       </nav>
-    </div>
+      </div>
+    </>
   );
 }

@@ -106,17 +106,34 @@ export default async function LocaleLayout({
   return (
     <html lang={langMap[locale] || 'uk'} suppressHydrationWarning>
       <head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossOrigin="anonymous" />
-        <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXX" />
-        {/* GA4 统计 */}
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${SITE.ga4Id}`} />
+        {/* GA4 统计（同意门控：仅在用户同意 analytics Cookie 后加载） */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${SITE.ga4Id}', { anonymize_ip: true });
+              window.gtag = function(){ dataLayer.push(arguments); };
+              (function () {
+                var id = '${SITE.ga4Id}';
+                var loaded = false;
+                function loadGtag() {
+                  if (loaded || typeof id !== 'string' || !id) return;
+                  loaded = true;
+                  var s = document.createElement('script');
+                  s.async = true;
+                  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+                  document.head.appendChild(s);
+                  window.dataLayer.push('js', new Date());
+                  window.dataLayer.push('config', id, { anonymize_ip: true });
+                }
+                function consentGranted() {
+                  try {
+                    var prefs = JSON.parse(localStorage.getItem('cookiePrefs') || '{}');
+                    if (prefs.analytics) loadGtag();
+                  } catch (e) {}
+                }
+                window.addEventListener('consent-updated', consentGranted);
+                consentGranted();
+              })();
             `,
           }}
         />

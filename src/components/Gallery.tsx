@@ -65,7 +65,8 @@ export default function Gallery() {
           >
             {t('title')}
           </h2>
-          <p className="mb-8" style={{ color: 'var(--text-muted)' }}>{t('subtitle')}</p>
+          <p className="mb-2" style={{ color: 'var(--text-muted)' }}>{t('subtitle')}</p>
+          <p className="mb-8 max-w-3xl text-base" style={{ color: 'var(--text-secondary)' }}>{t('lead')}</p>
           <div className="w-12 h-0.5 mb-10" style={{ background: 'var(--accent)' }} />
 
           <div className="relative">

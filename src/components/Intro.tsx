@@ -1,7 +1,8 @@
-import { useTranslations, useMessages } from 'next-intl';
+import { useTranslations, useMessages, useLocale } from 'next-intl';
 import { richText } from '@/lib/richText';
 
 export default function Intro() {
+  const locale = useLocale();
   const t = useTranslations('intro');
   const tOff = useTranslations('officialManagement');
   const messages = useMessages() as any;
@@ -86,6 +87,19 @@ export default function Intro() {
           <div className="text-base leading-relaxed whitespace-pre-wrap" style={{ color: 'var(--text-secondary)' }}>
             {tOff('text')}
           </div>
+        </div>
+
+        {/* 城市公园 hub 内链：为 «парки харькова / парк шевченко харьков» 等查询提供正文级锚文本 */}
+        <div className="mt-10 rounded-xl p-6 sm:p-8 text-white" style={{ background: 'var(--accent)' }}>
+          <h2 className="font-display text-xl font-semibold mb-3">{t('exploreParksTitle')}</h2>
+          <p className="text-base leading-relaxed mb-5 opacity-95">{t('exploreParksText')}</p>
+          <a
+            href={`/${locale}/parks`}
+            className="inline-flex items-center gap-2 rounded-lg bg-white px-5 py-2.5 text-sm font-semibold transition-opacity hover:opacity-90"
+            style={{ color: 'var(--accent)' }}
+          >
+            {t('exploreParksCta')}
+          </a>
         </div>
       </div>
     </section>

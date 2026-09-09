@@ -1,11 +1,11 @@
 {
   "meta": {
     "title": "Sarzhyn Yar Park, Kharkiv — metro route, hours, photos & pool",
-    "description": "Sarzhyn Yar Park in Kharkiv: a mineral spring, open-air pool, playgrounds and rest by the water. How to get there from Botanichnyi Sad metro, opening hours, map, history and photos."
+    "description": "Sarzhyn Yar Park, Kharkiv: free and open 24/7, rated 4.8 (32,968 reviews). Mineral spring, open-air pool, metro Botanichnyi Sad, map, history, photos."
   },
   "header": {
     "home": "Home",
-    "gallery": "Gallery",
+    "gallery": "Photos",
     "reviews": "Reviews",
     "map": "Map",
     "backToHome": "Back to Home"
@@ -20,6 +20,9 @@
     "openMaps": "View Location"
   },
   "intro": {
+      "exploreParksTitle": "Sarzhyn Yar among Kharkiv’s Parks",
+      "exploreParksText": "Sarzhyn Yar is just one of Kharkiv’s green oases. The Botanical Garden, the Shevchenko City Garden and the Kharkiv Forest Park are also close by. Explore them and plan your next walk in the city parks guide.",
+      "exploreParksCta": "Open the Kharkiv Parks Guide",
     "title": "About Sarzhyn Yar",
     "seoLead": "Welcome to **Sarzhyn Yar (Саржин Яр)**, the leafy public park that serves as the green heart of **Kharkiv**, **Kharkiv Oblast**, **Ukraine**. This destination is a primary hub for locals and travelers visiting the region.",
     "description": "Sarzhyn Yar is located in Kharkiv, Kharkiv Oblast, Ukraine. It is a beautiful urban park that serves as an ideal place for locals and tourists to relax and unwind. With its rich greenery and pleasant environment, the park is one of the important green spaces in Kharkiv, providing not only leisure space for citizens but also an excellent vantage point to experience the natural charm of Kharkiv.",
@@ -78,7 +81,9 @@
     "plusCode": "Plus Code",
     "plusCodeValue": "26GJ+JF Kharkiv, Kharkiv Oblast, Ukraine",
     "district": "District",
-    "districtValue": "Shevchenkivskyi District · Pavlovo Pole"
+    "districtValue": "Shevchenkivskyi District · Pavlovo Pole",
+      "metro": "Metro",
+      "metroValue": "Botanichnyi Sad station — about a 5-minute walk"
   },
   "hours": {
     "title": "Opening Hours",
@@ -172,7 +177,8 @@
   "gallery": {
     "title": "Sarzhyn Yar Park Photos",
     "subtitle": "Charming Scenery of Sarzhyn Yar",
-    "captions": [
+    "lead": "More than 20 photos of the park across the seasons — from spring greenery to winter snow. Click any photo to view it in a larger format.",
+      "captions": [
       "Park Panorama",
       "Tree-Lined Path",
       "Green Landscape",
@@ -392,7 +398,8 @@
     "paragraphs": [
       "Sarzhyn Yar is a historic ravine (yar) more than 12 kilometers long on the northern edge of Kharkiv. Its slopes have carried crystal-clear spring water toward the city for centuries, and the green valley has long been one of Kharkiv's most treasured natural landscapes.",
       "The ravine's most famous feature is the Sarzhyn Yar mineral spring, which still flows today. Around it, a modern spring pavilion and elevated wooden boardwalks have turned the valley into a year-round urban retreat where visitors can drink fresh mineral water, rest in the shade of old trees and enjoy the sound of the stream.",
-      "Today Sarzhyn Yar is maintained as a public recreation zone with walking paths, playgrounds, a stream and a small swimming pool. It is a natural monument of local significance and one of the most recognizable green landmarks in Kharkiv."
+      "Today Sarzhyn Yar is maintained as a public recreation zone with walking paths, playgrounds, a stream and a small swimming pool. It is a natural monument of local significance and one of the most recognizable green landmarks in Kharkiv.",
+      "The dome-shaped concrete spring pavilion that still marks Sarzhyn Yar today was built in the 1960s. The mineral water from this source has been known in Kharkiv for decades under the name «Kharkivska-1» (Харківська-1). The slopes of the ravine border the Kharkiv Botanical Garden, which is why rare plants — including species from the Red Book of Ukraine — have been preserved here."
     ]
   },
   "faq": {
@@ -430,6 +437,18 @@
       {
         "q": "Which district of Kharkiv is Sarzhyn Yar in?",
         "a": "Sarzhyn Yar is located in Kharkiv’s Shevchenkivskyi District, in the Pavlovo Pole area to the north-west of the city centre."
+      },
+      {
+        "q": "Can I drink the mineral water from the Sarzhyn Yar spring?",
+        "a": "Yes, the water at the spring pavilion is free and intended for drinking. It is best to fill your bottle at the official pavilion rather than from the open stream. If you have chronic health conditions or special needs, consult a doctor before regularly consuming mineral water."
+      },
+      {
+        "q": "What should I bring for a walk at Sarzhyn Yar?",
+        "a": "Comfortable shoes (some paths have slopes), drinking water, a hat in summer, an umbrella or light raincoat in spring and autumn, and a camera — the ravine is photogenic all year round."
+      },
+      {
+        "q": "How can I check the current status and safety of visiting?",
+        "a": "Sarzhyn Yar is an open public park, but conditions can change. Before you travel, check official announcements from local authorities and guidance on air-raid alerts, as well as the up-to-date tourism information on the official portals listed in the ‘Sources’ section."
       }
     ]
   },
@@ -440,7 +459,7 @@
   },
   "weather": {
     "title": "Weather at Sarzhyn Yar",
-    "subtitle": "Current weather and a 7-day forecast for Kharkiv to help you plan your walk.",
+    "subtitle": "Today’s weather and a 7-day forecast with tips for walking in the park.",
     "now": "Now",
     "feelsLike": "Feels like",
     "humidity": "Humidity",
@@ -450,7 +469,40 @@
     "today": "Today",
     "forecastTitle": "7-day forecast",
     "unavailable": "The weather forecast is temporarily unavailable. Please try refreshing the page later.",
-    "codes": {
+      "advice": {
+   "title": "Tips for your park visit today",
+   "sectionDress": "What to wear",
+   "sectionPlay": "What to plan",
+   "sectionPack": "What to bring",
+   "sectionRisk": "Safety — please note",
+   "aLayers": "Large day temperature swing — bring a light jacket or sweater.",
+   "aHot": "It will be hot — go for light, breathable clothes.",
+   "aCold": "It will be cool — a warm jacket and scarf will help.",
+   "aRain": "Rain is likely — wear a raincoat or a hooded jacket.",
+   "aWind": "It will be windy — a hooded jacket works better than an umbrella.",
+   "pClear": "Clear sky — a great day for walking the ravine trails and taking photos outdoors.",
+   "pCloudy": "Overcast — soft light is great for photos, and you can stroll without the sun.",
+   "pHeat": "Heat — plan your walk for the morning or evening; rest in the shade at midday.",
+   "pWater": "It is warm — if the mineral pool is open, you can cool off by the spring.",
+   "pRain": "Rain or a high chance of rain — boardwalks and paths may be slippery; pick sheltered spots.",
+   "pFog": "Fog — far views across the ravine will be hidden; better to shoot nearby details.",
+   "pWind": "Windy — gusts are stronger in open glades and near the water; choose sheltered alleys.",
+   "pSnow": "Snow — a nice time for winter photos, but paths can be slippery.",
+   "kUmbrella": "Compact umbrella",
+   "kRaincoat": "Rain poncho — more reliable than an umbrella in wind",
+   "kSun": "Sunscreen, sunglasses and a hat",
+   "kWater": "A bottle of water",
+   "kWarm": "Warm clothes (jacket, scarf)",
+   "kGloves": "Hat and gloves",
+   "kSwim": "Swimsuit and towel (if you plan to swim)",
+   "kComfort": "Comfortable walking shoes",
+   "rStorm": "Thunderstorm — don’t stand under tall trees, stay away from the water and wait it out under cover.",
+   "rHeavy": "Heavy rain — avoid low-lying parts of the ravine; paths may wash out.",
+   "rWind": "Gusty wind — be careful near trees with dry branches and near structures.",
+   "rFog": "Dense fog — poor visibility; move slowly on paths and slopes.",
+   "rHeat": "Strong heat — better to put off long midday walks."
+  },
+  "codes": {
       "clear": "Clear",
       "partlyCloudy": "Partly cloudy",
       "cloudy": "Cloudy",

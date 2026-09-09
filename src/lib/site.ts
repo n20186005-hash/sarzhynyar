@@ -21,14 +21,14 @@ export const SITE = {
   countryCode: 'UA',
   // {{POSTAL_CODE}}
   postalCode: '61000',
-  // {{LATITUDE}} / {{LONGITUDE}}（来源：维基百科/OSM）
-  latitude: 50.0267583,
-  longitude: 36.2309306,
+  // {{LATITUDE}} / {{LONGITUDE}}（与 Google Maps 地点标注一致，来自官方 pb embed 中心坐标）
+  latitude: 50.0265698,
+  longitude: 36.2311716,
   // {{MAPS_SHARE_URL}}
   mapsShareUrl: 'https://maps.app.goo.gl/uvLNbbjwgavkq2VP6',
-  // {{MAPS_EMBED_SRC}}
+  // {{MAPS_EMBED_SRC}}（Google Maps 官方精确 pb 嵌入链接）
   mapEmbedSrc:
-    'https://maps.google.com/maps?q=Sarzhyn+Yar,+Kharkiv,+Ukraine&t=&z=15&ie=UTF8&iwloc=&output=embed',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4555.66647361485!2d36.23117159999999!3d50.0265698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a6cd428fa91b%3A0xc1eeead81d445bbe!2sSarzhyn%20Yar!5e1!3m2!1szh-CN!2s!4v1788936360574!5m2!1szh-CN!2s',
   // Plus Code
   plusCode: '26GJ+JF Kharkiv, Kharkiv Oblast, Ukraine',
   // 评分与评论数（最新 Google 数据）
