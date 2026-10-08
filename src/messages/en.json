@@ -1,7 +1,24 @@
 {
   "meta": {
     "title": "Sarzhyn Yar Park, Kharkiv — metro route, hours, photos & pool",
-    "description": "Sarzhyn Yar Park, Kharkiv: free and open 24/7, rated 4.8 (32,968 reviews). Mineral spring, open-air pool, metro Botanichnyi Sad, map, history, photos."
+    "description": "Sarzhyn Yar Park, Kharkiv: free to visit, rated 4.8 (32,961 reviews). Mineral spring, open-air pool, metro Botanichnyi Sad, map, history, photos."
+  },
+  "safety": {
+    "title": "Important safety update",
+    "verified": "Verified: October 2026",
+    "intro": "Sarzhyn Yar is an ordinary city park, but current visiting conditions in Kharkiv depend on martial law and official restrictions. Check official sources before you travel.",
+    "airportLabel": "Air travel",
+    "airport": "Civilian air travel to Kharkiv is currently suspended: there are no commercial flights to Kharkiv International Airport (HRK). The easiest way to reach Kharkiv is by train, bus or car from other cities in Ukraine.",
+    "curfewLabel": "Curfew",
+    "curfew": "A curfew is in effect in Kharkiv: according to local authorities (September 2026), movement is restricted roughly from 00:00 to 05:00. This is not the same as the park’s usual daytime access — plan your visit during daylight hours.",
+    "alertLabel": "Air-raid alert",
+    "alert": "During an air-raid alert, go to the nearest shelter immediately. Follow official air-raid alert notifications before and during your visit.",
+    "linksTitle": "Official safety resources",
+    "links": [
+      { "name": "Cabinet of Ministers of Ukraine", "url": "https://www.kmu.gov.ua/" },
+      { "name": "Kharkiv Oblast Military Administration", "url": "https://kharkivoda.gov.ua/" },
+      { "name": "U.S. Department of State: Travel to Ukraine", "url": "https://travel.state.gov/" }
+    ]
   },
   "header": {
     "home": "Home",
@@ -15,8 +32,8 @@
     "subtitle": "Kharkiv · Ukraine",
     "imageAlt": "Sarzhyn Yar - main view of the park in Kharkiv, Ukraine",
     "rating": "4.8",
-    "reviewCount": "32,968",
-    "hours": "Open 24 Hours",
+    "reviewCount": "32,961",
+    "hours": "Free entry",
     "openMaps": "View Location"
   },
   "intro": {
@@ -29,7 +46,7 @@
     "visitGuide": {
       "title": "Visiting Tips",
       "items": [
-        "Free and open all day, visit anytime for a walk or relaxation",
+        "Free to enter; the park is usually open in daylight — plan your visit during the day",
         "Spring or autumn is recommended for the most pleasant weather",
         "Multiple paths within the park, perfect for a slow stroll and exploration",
         "Cafes and small dining options nearby"
@@ -88,7 +105,7 @@
   "hours": {
     "title": "Opening Hours",
     "outdoor": "Entire Park",
-    "outdoorTime": "Free and open all day, no admission fee",
+    "outdoorTime": "Free, usually open in daylight (roughly 06:00–22:00); no admission fee. Current access depends on official restrictions.",
     "lighthouse": "Best Time to Visit",
     "summer": "Spring and Autumn",
     "summerTime": "Pleasant climate, most suitable for outdoor activities and walking",
@@ -101,7 +118,7 @@
   "tickets": {
     "title": "Ticket Information",
     "outdoor": "Sarzhyn Yar",
-    "outdoorPrice": "Free all day",
+    "outdoorPrice": "Free (daytime entry)",
     "lighthouse": "Nearby Attractions",
     "adults": "Other Attractions in Kharkiv",
     "adultsPrice": "Fees apply according to each attraction's rules",
@@ -115,7 +132,7 @@
   "transport": {
     "title": "How to get to Sarzhyn Yar Park",
     "airport": "From the Airport",
-    "airportDesc": "Nearest airport: Kharkiv International Airport (HRK). From the airport, you can take a taxi or public transport to the city center.",
+    "airportDesc": "Civilian flights to Kharkiv are currently suspended, so Kharkiv International Airport (HRK) is not serving commercial flights. The easiest way to reach Kharkiv is by train, bus or car from other cities in Ukraine; from there, take the metro or a taxi to the park.",
     "selfDrive": "Driving",
     "selfDriveDesc": "Kharkiv has convenient transportation within the city. It is recommended to park in designated parking lots around the park.",
     "bus": "Public Transport",
@@ -127,7 +144,7 @@
     "tips": "Travel Tips",
     "tipsDesc": "Kharkiv is the second-largest city in Ukraine, with rich historical culture, magnificent squares, and beautiful natural landscapes.",
     "metroTitle": "Botanichnyi Sad metro — 5 minutes’ walk",
-    "metroDesc": "The easiest option for most visitors: leave the metro at Botanichnyi Sad station and head towards the park — the walk to the main entrance takes about 5 minutes."
+    "metroDesc": "The easiest option for most visitors: leave the metro at Botanichnyi Sad station and head toward the green ravine area — the walk to the main entrance takes about 5 minutes. From the exit, follow the park signs and the wooden boardwalks leading to the mineral spring."
   },
   "route": {
     "title": "Landmarks & Attractions Around Sarzhyn Yar",
@@ -141,7 +158,7 @@
       "Taste traditional Ukrainian cuisine or local coffee at restaurants in the city center"
     ],
     "supplements": [
-      "The park is a public space, free and open all day, no reservations needed",
+      "The park is a public space, free and usually open in daylight; no reservations needed",
       "Parking in some areas of Kharkiv is limited, it is recommended to use public transport",
       "The metro is highly recommended for exploring Kharkiv, as it is fast and unique"
     ],
@@ -416,7 +433,7 @@
       },
       {
         "q": "What are the opening hours of Sarzhyn Yar?",
-        "a": "Sarzhyn Yar is an open-air park and can be visited 24 hours a day. Early mornings and late afternoons are the most peaceful times for a walk."
+        "a": "Sarzhyn Yar is an open-air park, usually accessible in daylight (roughly 06:00–22:00) and free. Observe the curfew and official restrictions; early mornings are the calmest time for a walk."
       },
       {
         "q": "What can visitors do at Sarzhyn Yar?",
@@ -799,7 +816,7 @@
       }
     ],
     "ctaTitle": "Start at Sarzhyn Yar",
-    "ctaText": "Sarzhyn Yar is easy to reach, open free of charge all year and has wooden boardwalks — a good starting point for exploring Kharkiv’s parks.",
+    "ctaText": "Sarzhyn Yar is easy to reach, free and usually open in daylight, with wooden boardwalks — a good starting point for exploring Kharkiv’s parks.",
     "ctaLabel": "Read the full Sarzhyn Yar guide",
     "note": "Before you travel, check the current status and accessibility of individual locations on official city resources — park arrangements can change."
   }

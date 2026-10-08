@@ -41,6 +41,10 @@
   --tag-bg: var(--color-sand-200);
   --tag-text: var(--color-nature-700);
   --map-border: var(--color-sand-300);
+  --safety-bg: #fdf6ec;
+  --safety-border: #f0c987;
+  --safety-accent: #b45309;
+  --safety-verified-bg: #fde9cf;
 }
 
 [data-theme="dark"] {
@@ -59,6 +63,10 @@
   --tag-bg: #1e3a28;
   --tag-text: #a0c4a8;
   --map-border: #1e3a28;
+  --safety-bg: #2a2113;
+  --safety-border: #6b4a1f;
+  --safety-accent: #f0b35e;
+  --safety-verified-bg: #3a2c16;
 }
 
 * {

@@ -33,7 +33,7 @@ export const SITE = {
   plusCode: '26GJ+JF Kharkiv, Kharkiv Oblast, Ukraine',
   // 评分与评论数（最新 Google 数据）
   rating: '4.8',
-  reviewCount: '32,968',
+  reviewCount: '32,961',
   // {{NEARBY_LANDMARK_1}} / {{NEARBY_LANDMARK_2}}
   nearbyLandmark1: 'Kharkiv Botanical Garden',
   nearbyLandmark2: 'Kharkiv Cable Car',
@@ -71,7 +71,9 @@ export function buildAttractionJsonLd(description: string): Record<string, unkno
     image: [SITE.heroImageUrl],
     isAccessibleForFree: true,
     publicAccess: true,
-    openingHours: 'Mo-Su 00:00-24:00',
+    // Typical daylight public access; actual access depends on official
+    // restrictions (curfew, martial law). Not a 24/7 guarantee.
+    openingHours: 'Mo-Su 06:00-22:00',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Саржин Яр, Шевченківський район (Pavlovo Pole)',

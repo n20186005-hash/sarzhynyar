@@ -2,6 +2,7 @@ import { setRequestLocale } from 'next-intl/server';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import BreadcrumbBar from '@/components/BreadcrumbBar';
+import SafetySection from '@/components/SafetySection';
 import Intro from '@/components/Intro';
 import HistorySection from '@/components/HistorySection';
 import BasicInfo from '@/components/BasicInfo';
@@ -36,6 +37,7 @@ export default async function HomePage({
       <main>
         <Hero />
         <BreadcrumbBar />
+        <SafetySection />
         <Intro />
         <HistorySection />
         <BasicInfo />
